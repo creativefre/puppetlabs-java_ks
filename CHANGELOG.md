@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) and this project adheres to [Semantic Versioning](http://semver.org).
 
+## [v4.0.1](https://github.com/puppetlabs/puppetlabs-java_ks/tree/v4.0.1) (2021-06-05)
+
+[Full Changelog](https://github.com/puppetlabs/puppetlabs-java_ks/compare/v4.0.0...v4.0.1)
+
+### Fixed
+
+- \(MODULES-11067\) Fix keytool output parsing [\#370](https://github.com/puppetlabs/puppetlabs-java_ks/pull/370) ([durist](https://github.com/durist))
+
 ## [v4.0.0](https://github.com/puppetlabs/puppetlabs-java_ks/tree/v4.0.0) (2021-03-01)
 
 [Full Changelog](https://github.com/puppetlabs/puppetlabs-java_ks/compare/v3.4.0...v4.0.0)
