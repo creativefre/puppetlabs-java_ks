@@ -1,5 +1,12 @@
 # frozen_string_literal: true
 
+require 'set'
+class Array
+  def included_in? array
+    array.to_set.superset(self.to_set)
+  end
+end
+
 Puppet::Type.newtype(:java_ks) do
   @doc = 'Manages the entries in a java keystore, and uses composite namevars to
   accomplish the same alias spread across multiple target keystores.'
