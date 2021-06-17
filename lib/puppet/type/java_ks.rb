@@ -42,7 +42,7 @@ Puppet::Type.newtype(:java_ks) do
           return true if is == :absent
         when :latest
           unless is == :absent
-            return true if (provider.latest - provider.current).empty?
+            return true if (provider.current - provider.latest).empty? #check if the keys of latest equals all keys of current (then nothing is left)
           end
         end
       end
