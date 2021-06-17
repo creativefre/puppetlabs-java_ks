@@ -177,7 +177,7 @@ Puppet::Type.type(:java_ks).provide(:keytool) do
     output.scan(%r{^Certificate fingerprints:(.*?)Signature?}m).flatten.each do |certblock|
       fps.push(certblock.scan(%r{^\s+\S+:\s+(\S+)}m))
     end
-    fps.flatten.sort.join('/')
+    fps.flatten.sort
   end
 
   # Reading the fingerprint of the certificate on disk.
